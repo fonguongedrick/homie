@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.blue[200]
+        scaffoldBackgroundColor: Colors.blue[300]
       ),
       home: FirstScreen(),
     );
@@ -51,17 +51,19 @@ class FirstScreen extends StatelessWidget {
                 ),
               Text(
                 'Find your perfect place to stay ',
-                style: TextStyle(fontSize: 24,),
+                style: TextStyle(fontSize: 29, color: Colors.white),
               ),
-              SizedBox(height: 100),
+              SizedBox(height: 130),
               Align(
                 alignment: Alignment.centerRight,
-                child: CircleAvatar(child: IconButton(onPressed: (){
+                child: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: IconButton(onPressed: (){
               Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => MyFirstScreen()),
           );
-                }, icon: Icon(Icons.arrow_forward, color: Colors.white,)),),
+                }, icon: Icon(Icons.arrow_forward, color: Colors.orange,)),),
               ),
               Image.asset('assets/House searching-cuate.png'),
               

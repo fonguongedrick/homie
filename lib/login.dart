@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'sign_up.dart';
 import 'reset_password.dart';
+import 'dashboard.dart';
 class LoginPage extends StatelessWidget {
   
 
@@ -76,9 +77,14 @@ class LoginPage extends StatelessWidget {
                   color: Colors.blue
                 ),
       
-                child:TextButton(onPressed: (){}, child: 
+                child:TextButton(onPressed: (){
+                  Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DashboardPage()),
+                      );
+                }, child: 
                 Center(child: Text('Login',
-                style: TextStyle(color: Colors.white),)))
+                style: TextStyle(color: const Color(0xFFFFFFFF)),)))
                   
                 
               ),

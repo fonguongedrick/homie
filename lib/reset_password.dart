@@ -12,6 +12,12 @@ class ResetPassword extends StatelessWidget {
         style: TextStyle(color: Colors.blue[200],fontSize: 30,),),
         backgroundColor: Colors.white,
         elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black,),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
       body: Container(
         color: Colors.white,
@@ -88,6 +94,12 @@ class ResetPasswordPage extends StatelessWidget {
         style: TextStyle(color: Colors.blue[200],fontSize: 30,)),
         backgroundColor: Colors.white,
         elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black,),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
       body: Container(
         color: Colors.white,
